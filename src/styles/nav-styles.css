@@ -30,6 +30,7 @@ li {
 }
 
 @media (max-width: 768px) {
+
     ul {
         flex-direction: column;
         text-align: center;
@@ -37,6 +38,10 @@ li {
         width: 100%;
         margin-top: 40px;
         transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-height-full {
+        height: 100%;
     }
 
     .menu-items-show {

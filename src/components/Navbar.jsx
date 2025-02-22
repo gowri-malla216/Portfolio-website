@@ -47,7 +47,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className="fixed flex-row top-0 w-full px-6 py-4 transition-all z-50 duration-300 backdrop-blur-lg"
+            className={`fixed flex-row top-0 w-full px-6 py-4 transition-all z-50 duration-300 backdrop-blur-lg ${isOpen ? "nav-height-full" : ""}`}
             style={{
                 opacity: `${Math.min(100, scrolling / 3)}%`
             }}
