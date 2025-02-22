@@ -2,12 +2,23 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import "../styles/nav-styles.css"
 import "/gm.png"
+import { Menu, X } from "lucide-react";
+
 
 const Navbar = () => {
     const [scrolling, setScrolling] = useState(0);
     const sections = ["Home", "Skills", "Education & Work", "Projects", "Achievements", "Contact"];
     const [activeSection, setActiveSection] = useState("Home");
     const [progress, setProgress] = useState({})
+    const [isOpen, setIsOpen] = useState(true);
+
+    const handleToggle = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const handleCloseMenu = () => {
+        setIsOpen(false);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -41,16 +52,25 @@ const Navbar = () => {
                 opacity: `${Math.min(100, scrolling / 3)}%`
             }}
         >
-            <h1 className="float-left py-2 ml-2 font-bold text-xl preferred-name-color w-50">Gowri Malla</h1>
-            <ul className="flex justify-center space-x-4 text-lg text-white">
+
+            <h1 className="float-left py-2 md:ml-2 font-bold text-xl preferred-name-color w-50">Gowri Malla</h1>
+
+            {/* Mobile Menu Button */}
+            <button className="md:hidden float-right py-2" onClick={handleToggle}>
+                {isOpen ? <X size={28} color="#63D471" /> : <Menu size={28} color="#63D471" />}
+            </button>
+
+            <ul className={`md:flex justify-center absolute md:relative md:space-x-6 bg-transparent text-lg text-white`}>
+                {/* > */}
                 {sections.map((section) => (
-                    <li key={section} className="relative cursor-pointer hover:scale-110">
+                    <li key={section} className={`relative cursor-pointer hover:scale-110 md:bg-transparent ${isOpen ? "block" : "hidden"} md:flex-row text-center`}>
                         <Link
                             to={section.toLowerCase()}
                             smooth={true}
                             duration={500}
                             className={`px-4 py-2 rounded-md transition ${activeSection === section ? "activate-section" : "disabled-section"
                                 }`}
+                            onClick={handleCloseMenu}
                         >
                             {section}
                         </Link>
