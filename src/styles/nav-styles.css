@@ -1,0 +1,30 @@
+.progress-line {
+    background: linear-gradient(135deg, #233329, #63D471);
+    transition: transform 0.2s ease-in-out;
+}
+
+.activate-section {
+    transition: transform 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+nav {
+    transition: background 3s ease-in-out;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.preferred-name-color {
+    background: #63D471;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,85 @@
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-card {
+    width: 130px;
+    height: 130px;
+    perspective: 1200px;
+    /* Increased for a better 3D effect */
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+.skill-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+    /* Smooth flip */
+    will-change: transform;
+}
+
+.skill-card:hover .skill-inner {
+    transform: rotateY(180deg);
+}
+
+.skill-front,
+.skill-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skill-front {
+    transition: background 0.3s ease-in-out;
+}
+
+.skill-front:hover {
+    background: black;
+}
+
+.skill-logo {
+    width: 65%;
+    height: auto;
+    transition: transform 0.4s ease-in-out;
+}
+
+.skill-card:hover .skill-logo {
+    transform: scale(1.1);
+    /* Slight pop-up effect */
+}
+
+.skill-back {
+    background: linear-gradient(135deg, #233329, #63D471);
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.9;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Fade-in animation for tiles */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

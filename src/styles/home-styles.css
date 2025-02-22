@@ -1,0 +1,4 @@
+.writing-mode-optimized {
+    transform: rotate(90deg);
+    will-change: transform, opacity;
+}
