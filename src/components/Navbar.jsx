@@ -10,7 +10,7 @@ const Navbar = () => {
     const sections = ["Home", "Skills", "Education & Work", "Projects", "Achievements", "Contact"];
     const [activeSection, setActiveSection] = useState("Home");
     const [progress, setProgress] = useState({})
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
@@ -63,7 +63,7 @@ const Navbar = () => {
             <ul className={`md:flex justify-center absolute md:relative md:space-x-6 bg-transparent text-lg text-white`}>
                 {/* > */}
                 {sections.map((section) => (
-                    <li key={section} className={`relative cursor-pointer hover:scale-110 md:bg-transparent ${isOpen ? "block" : "hidden"} md:flex-row text-center`}>
+                    <li key={section} className={`relative cursor-pointer hover:scale-110 md:bg-transparent ${isOpen ? "menu-items-show" : "menu-items-hide"} md:flex-row text-center`}>
                         <Link
                             to={section.toLowerCase()}
                             smooth={true}
