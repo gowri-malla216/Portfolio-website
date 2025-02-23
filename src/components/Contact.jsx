@@ -88,7 +88,7 @@ const Contact = () => {
                         </div>
                         <br />
                         <div >
-                            <a className="flex flex-row text-4xl" href="https://drive.google.com/file/d/1aG5-LU6xKFkvyhMm4UnVNIPYvsZH_DrB/view?usp=sharing" target="_blank">
+                            <a className="flex flex-row text-4xl" href="https://drive.google.com/drive/folders/1vDPXozCFNwqADKLZUDlqULwHk5l42Z47?usp=sharing" target="_blank">
                                 <AiFillProfile />
                                 <h2 className=" text-amber-50 text-xl ml-2 font-bold"> My Resume</h2>
                             </a>
