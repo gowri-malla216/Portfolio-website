@@ -155,11 +155,7 @@ const Projects = () => {
 
 
                 {/* Repository Name and Info */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent z-10 duration-500 group-hover:opacity-0">
-                  <h3 className="text-white font-bold text-xl mb-2">
-                    {repo.name.replaceAll("-", " ")}
-                  </h3>
-
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent z-10 duration-500 group-hover:opacity-0">
                   {repo.topics && (
                     repo.topics.map((topic) => (
                       <span className="inline-block px-3 py-1 text-sm text-white bg-black/50 rounded-full mb-1 mr-0.5">
@@ -167,6 +163,10 @@ const Projects = () => {
                       </span>
                     ))
                   )}
+
+                  <h3 className="text-white font-bold text-xl mb-0">
+                    {repo.name.replaceAll("-", " ")}
+                  </h3>
                 </div>
 
                 {/* Description Overlay */}
