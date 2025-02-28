@@ -1,6 +1,6 @@
 # Personal Portfolio Website  
 
-**Live Demo:** [Click Here](https://gowri-malla-portfolio-website.vercel.app/)  
+
 
 ##  Overview  
 This is my **personal portfolio website** built using **React & Tailwind CSS**, showcasing:  
@@ -51,8 +51,7 @@ cd portfolio-website
 ---
 
 ## Contact Me
-- Email: gowri.malla123@gmail.com.com
-- LinkedIn: [Gowri Malla](https://www.linkedin.com/in/gowrimalla/)
+- Email: gowri.malla123@gmail.com.com\
 
 ---
 ## Contributing
