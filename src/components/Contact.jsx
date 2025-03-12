@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "../styles/contact-styles.css"
+import { AiFillLinkedin } from "react-icons/ai";
 import { AiTwotoneMail } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
 import { AiFillGithub } from "react-icons/ai";
 import { SiLeetcode } from "react-icons/si";
 import { FaHackerrank } from "react-icons/fa6";
+import { AiFillProfile } from "react-icons/ai";
 import ServiceParams from "../utils/email-service-params";
 import emailjs from "@emailjs/browser";
 
@@ -79,12 +81,18 @@ const Contact = () => {
                         <br />
                         <div className="flex flex-row">
                             <a className="text-4xl mr-2" href="mailto:gowri.malla123@gmail.com" target="_blank"><AiTwotoneMail /></a>
+                            <a className="text-4xl mr-2" href="https://www.linkedin.com/in/gowrimalla/" target="_blank"><AiFillLinkedin /></a>
                             <a className="text-4xl mr-2" href="https://github.com/gowri-malla216/" target="_blank"><AiFillGithub /></a>
                             <a className="text-4xl mr-2" href="https://leetcode.com/u/gowri_malla/" target="_blank"><SiLeetcode /></a>
                             <a className="text-4xl mr-2" href="https://www.hackerrank.com/profile/gowri_malla" target="_blank"><FaHackerrank /></a>
                         </div>
                         <br />
-
+                        <div >
+                            <a className="flex flex-row text-4xl" href="https://drive.google.com/drive/folders/1vDPXozCFNwqADKLZUDlqULwHk5l42Z47?usp=sharing" target="_blank">
+                                <AiFillProfile />
+                                <h2 className=" text-amber-50 text-xl ml-2 font-bold"> My Resume</h2>
+                            </a>
+                        </div>
                         <br />
                         <div>
                             <a className="flex flex-row text-4xl" href="https://maps.app.goo.gl/gfSyogpdiuNDgKby9" target="_blank">
