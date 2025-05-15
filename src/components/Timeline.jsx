@@ -3,9 +3,10 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import "react-vertical-timeline-component/style.min.css";
 
 const experiences = [
-  { id: 1, backgroundStyle: ['#F2C335', '#025939'], imgPath: '/logos/gmu-logo.png', date: "2023 - 2024", title: "Graduate Teaching Assistant", company: "George Mason University", responsibilities: ["Object-Oriented Software Design and Implementation", "Web Application Development",] },
+  { id: 5, backgroundStyle: ['#FFEFF0', '#DA2131'], imgPath: '/logos/cswg-logo.jpeg', date: "2025 - present", title: "Software Developer", company: "C&S Wholesale Grocers", responsibilities: ['Python', 'Django', 'React', 'NextJS', 'HTML/CSS', 'TailwindCSS', 'JavaScript', 'GCP', 'Spark', 'PostgreSQL', 'Oracle'] },
+  { id: 1, backgroundStyle: ['#F2C335', '#025939'], imgPath: '/logos/gmu-logo.png', date: "2023 - 2025", title: "Graduate Teaching Assistant", company: "George Mason University", responsibilities: ["Object-Oriented Software Design and Implementation", "Web Application Development",] },
   { id: 2, backgroundStyle: ['#025939', '#F2C335'], imgPath: '/logos/gmu-logo.png', date: "2022 - 2024", title: "Master's in Computer Science", company: "George Mason University", responsibilities: ["Operating Systems", "Software Design and Architecture", "Software Design Patterns", "Data Mining", "Machine Learning", "Artificial Intelligence", "MapReduce", "Natural Language Processing",] },
-  { id: 3, backgroundStyle: ['#54BF50', '#F2F2F2'], imgPath: '/logos/ncr-lg.png', date: "2020 - 2022", title: "Software Engineer", company: "NCR Voyix", responsibilities: ["C#", "Java", 'Spring', 'ASP.NET core MVC', 'Entity Core', 'ReactJS', 'TypeScript', 'AngularJS', 'MySQL', 'AWS', 'Jenkins', 'Docker', 'Kubernetes',] },
+  { id: 3, backgroundStyle: ['#54BF50', '#F2F2F2'], imgPath: '/logos/ncr-lg.png', date: "2020 - 2022", title: "Software Engineer", company: "NCR Voyix", responsibilities: ["C#", "Java", 'Spring', 'ASP.NET core MVC', 'Entity Core', 'React', 'TypeScript', 'Angular', 'MySQL', 'AWS', 'Jenkins', 'Docker', 'Kubernetes',] },
   { id: 4, backgroundStyle: ['#0F5AF2', '#F2F2F2'], imgPath: '/logos/gvpcoe_logo.png', date: "2016 - 2020", title: "Bachelor's in Computer Science Engineering", company: "GVP College of Engineering", responsibilities: ['C', 'Java', 'HTML/CSS', 'JavaScript', 'Python', 'Software Engineering', "Data Structures and Algorithms", 'Computer Networks'] },
 ];
 
